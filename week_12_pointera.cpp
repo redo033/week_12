@@ -210,3 +210,26 @@ int main()
     cout<<st;
 }
 */
+/*
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int singleNumber(vector<int>& vec)  
+{
+    int res = 0;
+    for (int x : vec)
+        res = x;
+    return res;
+}
+
+int main() {
+    vector<int> v;
+    int t;
+    while (cin >> t) {
+        v.push_back(t);
+    }
+    cout << singleNumber(v) << endl;  
+    return 0;
+}
+*/
