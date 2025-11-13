@@ -187,3 +187,26 @@ int main()
     return 0;
 }
 */
+//Problem 9 
+/*
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    string st;
+    cin>>st;
+    int s=st.size();
+    for(int i=0;i<s;i++){
+        if(st[i]>='A' and st[i]<='Z'){
+            st[i]=char(int(st[i])+('a'-'A'));
+        }
+        if(st[0]>='a' and st[0]<='z' ){
+            st[i]=char(int(st[i])-('a'-'A'));
+        }
+        
+    }
+    cout<<st;
+}
+*/
