@@ -165,3 +165,25 @@ int main() {
     return 0;
 }
 */
+/*
+Problem 8
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    int n,d;
+    cin>>n;
+    vector <int> arr;
+    for(int i=0;i<n;i++){
+        cin>>d;
+        if(i==n-1)d++;
+        arr.push_back(d);
+    }
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<' ';
+    }
+    return 0;
+}
+*/
