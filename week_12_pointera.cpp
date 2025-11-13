@@ -68,3 +68,100 @@ int main()
     return 0;
 }
 */
+//PROBLEM 4
+/*
+
+#include <iostream>
+using namespace std;
+void sumArrays(const double *arr1, const double *arr2, double *sum, int size){
+    for (int i = 0; i < size; i++) {
+        sum[i] = arr1[i] + arr2[i];
+    }
+    for (int i = 0; i < size; i++) {
+        cout << sum[i] << " ";
+    }
+}
+int main()
+{
+   int n;
+   cin>>n;
+   double arr1[n],arr2[n];
+   for(int i=0;i<n;i++){
+       cin>>arr1[i];
+   }
+   for(int i=0;i<n;i++){
+       cin>>arr2[i];
+   }
+   double result[1000];
+   double *ar1=arr1;
+   double *ar2=arr2;
+   double *sum=result;
+   sumArrays(ar1,ar2,result,n);
+    return 0;
+}
+*/
+//PROBLEM 5
+
+/*
+
+#include <iostream>
+using namespace std;
+void sumArrays( double *arr1,  double *arr2,double  *sum, int size){
+    for (int i = 0; i < size; i++) {
+        sum[i] = arr1[i];
+    }
+    for (int i = 0; i < size; i++) {
+        arr1[i]= arr2[i];
+    }
+    for (int i = 0; i < size; i++) {
+        arr2[i]= sum[i];
+    }
+    for (int i = 0; i < size; i++) {
+        cout << arr1[i] << " ";
+    }cout<<endl;
+    for (int i = 0; i < size; i++) {
+        cout << arr2[i] << " ";
+    }
+}
+int main()
+{
+   int n;
+   cin>>n;
+   double arr1[n],arr2[n];
+   for(int i=0;i<n;i++){
+       cin>>arr1[i];
+   }
+   for(int i=0;i<n;i++){
+       cin>>arr2[i];
+   }
+   double result[1000];
+   double *ar1=arr1;
+   double *ar2=arr2;
+   double *sum=result;
+   sumArrays(ar1,ar2,result,n);
+    return 0;
+}
+*/
+//PROBLEM 7
+/*
+
+#include <iostream>
+using namespace std;
+void power(double* n, const int* p) {
+    double base = *n;
+    int exp = *p;
+    double result = 1;
+    for (int i = 0; i < exp; i++) {
+        result *= base;
+    }
+    *n = result;
+}
+int main() {
+    double num;
+    int pow;
+    cin>>num>>pow;
+    power(&num, &pow);
+    cout<<num;
+    return 0;
+}
+*/
